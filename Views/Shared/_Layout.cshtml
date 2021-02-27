@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OnlineBookstore</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="bg-dark text-white p-1">
+        <span class="navbar-brand ml-2">Hami Reads</span>
+    </div>
+    <div class="row m-1 p-1">
+        <div id="motto" class="col-1">
+            <h1>A Book A Day</h1>
+        </div>
+        <div class="col-11">
+            <!--Html views will  go here-->
+            @RenderBody()
+        </div>
+    </div>
+        
+
+</body>
+</html>
