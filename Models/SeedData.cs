@@ -27,10 +27,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "Les Miserables",
-                        Author = "Victor Hugo",
+                        AuthFirstName = "Victor",
+                        AuthLastName = "Hugo",
                         Publisher = "Signet",
                         ISBN = "978-0451419439",
-                        Category = "Fiction, Classic",
+                        Classification = "Fiction",
+                        Category = "Classic",
                         Price = 9.95,
                         NumPages = 1488
                     },
@@ -38,10 +40,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "Team of Rivals",
-                        Author = "Doris Kearns Goodwin",
+                        AuthFirstName = "Doris Kearns",
+                        AuthLastName = "Goodwin",
                         Publisher = "Simon & Schuster",
                         ISBN = "978-0743270755",
-                        Category = "Non-Fiction, Biography",
+                        Classification = "Non-Fiction",
+                        Category = "Biography",
                         Price = 14.58,
                         NumPages = 944
                     },
@@ -49,10 +53,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "The Snowball",
-                        Author = "Alice Schroeder",
+                        AuthFirstName = "Alice",
+                        AuthLastName = "Schroeder",
                         Publisher = "Bantam",
                         ISBN = "978-0553384611",
-                        Category = "Non-Fiction, Biography",
+                        Classification = "Non-Fiction",
+                        Category = "Biography",
                         Price = 21.54,
                         NumPages = 832
                     },
@@ -60,10 +66,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "American Ulysses",
-                        Author = "Ronald C. White",
+                        AuthFirstName = "Ronald C.",
+                        AuthLastName = "White",
                         Publisher = "Random House",
                         ISBN = "978-0812981254",
-                        Category = "Non-Fiction, Biography",
+                        Classification = "Non-Fiction",
+                        Category = "Biography",
                         Price = 11.61,
                         NumPages = 864
                     },
@@ -71,10 +79,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "Unbroken",
-                        Author = "Laura Hillenbrand",
+                        AuthFirstName = "Laura",
+                        AuthLastName = "Hillenbrand",
                         Publisher = "Random House",
                         ISBN = "978-0812974492",
-                        Category = "Non-Fiction, Historical",
+                        Classification = "Non-Fiction",
+                        Category = "Historical",
                         Price = 13.33,
                         NumPages = 528
                     },
@@ -82,10 +92,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "The Great Train Robbery",
-                        Author = "Michael Crichton",
+                        AuthFirstName = "Michael",
+                        AuthLastName = "Crichton",
                         Publisher = "Vintage",
                         ISBN = "978-0804171281",
-                        Category = "Fiction, Historical Fiction",
+                        Classification = "Fiction",
+                        Category = "Historical Fiction",
                         Price = 15.95,
                         NumPages = 288
                     },
@@ -93,10 +105,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "Deep Work",
-                        Author = "Cal Newport",
+                        AuthFirstName = "Cal",
+                        AuthLastName = "Newport",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978-1455586691",
-                        Category = "Non-Fiction, Self-Help",
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
                         Price = 14.99,
                         NumPages = 304
                     },
@@ -104,10 +118,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "It's Your Ship",
-                        Author = "Michael Abrashoff",
+                        AuthFirstName = "Michael",
+                        AuthLastName = "Abrashoff",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978-1455523023",
-                        Category = "Non-Fiction, Self-Help",
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
                         Price = 21.66,
                         NumPages = 240
                     },
@@ -115,10 +131,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "The Virgin Way",
-                        Author = "Richard Branson",
+                        AuthFirstName = "Richard",
+                        AuthLastName = "Branson",
                         Publisher = "Portfolio",
                         ISBN = "978-1591847984",
-                        Category = "Non-Fiction, Business",
+                        Classification = "Non-Fiction",
+                        Category = "Business",
                         Price = 29.16,
                         NumPages = 400
                     },
@@ -126,10 +144,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "Sycamore Row",
-                        Author = "John Grisham",
+                        AuthFirstName = "John",
+                        AuthLastName = "Grisham",
                         Publisher = "Bantam",
                         ISBN = "978-0553393613",
-                        Category = "Fiction, Thrillers",
+                        Classification = "Fiction",
+                        Category = "Thrillers",
                         Price = 15.03,
                         NumPages = 642
                     },
@@ -137,10 +157,12 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "The Count of Monte Cristo",
-                        Author = "Alexandre Dumas",
+                        AuthFirstName = "Alexandre",
+                        AuthLastName = "Dumas",
                         Publisher = "Penguin Classics",
                         ISBN = "978-0140449266",
-                        Category = "Fiction, Classic",
+                        Classification = "Fiction",
+                        Category = "Classic",
                         Price = 14.40,
                         NumPages = 1276
                     },
@@ -148,23 +170,27 @@ namespace OnlineBookstore.Models
                     new Book
                     {
                         Title = "The Way of Kings",
-                        Author = "Brandon Sanderson",
+                        AuthFirstName = "Brandon",
+                        AuthLastName = "Sanderson",
                         Publisher = "Tor Fantasy",
                         ISBN = "978-0765365279",
-                        Category = "Fiction, Fantasy",
+                        Classification = "Fiction",
+                        Category = "Fantasy",
                         Price = 9.59,
                         NumPages = 1280
                     },
 
                     new Book
                     {
-                        Title = "The Snowball: Warren Buffett and the Business of Life",
-                        Author = "Alice Schroeder",
-                        Publisher = "Bantam",
-                        ISBN = "978-0553384611",
-                        Category = "Non-Fiction, Biography",
-                        Price = 21.54,
-                        NumPages = 832
+                        Title = "Essentialism",
+                        AuthFirstName = "Greg",
+                        AuthLastName = "McKeown",
+                        Publisher = "Crown",
+                        ISBN = "978-0804137409",
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
+                        Price = 13.43,
+                        NumPages = 288
                     }
 
 

@@ -26,12 +26,13 @@ namespace OnlineBookstore.Controllers
             
         }
 
-        public IActionResult Index(int page = 1)
+        public IActionResult Index(string category, int page = 1)
         {
             return View(new ProjectListViewModel
             {
                 //Build Pagination
                 Books = _repository.Books
+                    .Where(p => category == null || p.Category == category)
                     .OrderBy(p => p.BookId)
                     .Skip((page - 1) * PageSize)
                     .Take(PageSize)
@@ -41,8 +42,11 @@ namespace OnlineBookstore.Controllers
                 {
                     CurrentPage = page,
                     ItemsPerPage = PageSize,
-                    TotalNumItems = _repository.Books.Count()
-                }
+                    TotalNumItems = category == null ? _repository.Books.Count() :
+                        _repository.Books.Where(x => x.Category == category).Count()
+                },
+                //Set CurrentCategory and allow it to be searched
+                CurrentCategory = category
             });    
         }
 

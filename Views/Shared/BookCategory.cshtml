@@ -1,0 +1,14 @@
+﻿@model Book
+
+<!--Partial view containing the inside of the foreach loop in Index-->
+<tr>
+    <td>@Model.Title</td>
+    <td>@Model.AuthFirstName</td>
+    <td>@Model.AuthLastName</td>
+    <td>@Model.Publisher</td>
+    <td>@Model.ISBN</td>
+    <td>@Model.Classification</td>
+    <td>@Model.Category</td>
+    <td>@("$" + Model.Price)</td>
+    <td>@Model.NumPages</td>
+</tr>

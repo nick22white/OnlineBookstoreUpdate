@@ -58,8 +58,19 @@ namespace OnlineBookstore
             //Changes the page nav in the URL
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    "pagination",
+                endpoints.MapControllerRoute("catpage",
+                    "{category}/{page:int}",
+                    new { Controller = "Home", action = "Index" });
+
+                endpoints.MapControllerRoute("pagination",
+                    "{page:int}",
+                    new { Controller = "Home", action = "Index" });
+
+                endpoints.MapControllerRoute("category",
+                    "{category}",
+                    new { Controller = "Home", action = "Index", page = 1 });
+
+                endpoints.MapControllerRoute("pagination",
                     "P{page}", 
                     new { Controller = "Home", action = "Index" });
 

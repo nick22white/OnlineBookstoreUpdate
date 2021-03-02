@@ -8,5 +8,6 @@ namespace OnlineBookstore.Models.ViewModels
         //Contains the data needed for Views
         public IEnumerable<Book> Books { get; set; }
         public PagingInfo PagingInfo { get; set; }
+        public string CurrentCategory { get; set; }
     }
 }
